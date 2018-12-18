@@ -22,7 +22,7 @@ PyText3 is compatible with Mac OS, Linux, and Windows as long as there is a Pyth
 To run PyText3, all you have to do is run the main.py file.
 
 ### Screenshots
-<img src="/images/screenshots/windows.png" alt="Screenshot of PyText3 running on Windows 10">
+<img src="/images/Screenshots/windows.png" alt="Screenshot of PyText3 running on Windows 10">
 
 # Acknowledgments
 
