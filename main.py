@@ -51,7 +51,6 @@ class TextLineNumbers(tk.Canvas):
             self.create_text(2, y, anchor="nw", text=linenum, fill=fillcolor)
             i = self.textwidget.index("%s+1line" % i)
 
-
 class CustomText(tk.Text):
     def __init__(self, *args, **kwargs):
         tk.Text.__init__(self, *args, **kwargs)
@@ -97,12 +96,12 @@ def onChange(event):
 
     # syntaxhighlighting.HighlightSyntax(textField, defaultTheme, language)
 
-
 def closeWindow(event=None):
     if messagebox.askyesno("Quit", "Are you sure you want to exit?", icon="question"):
+        if messagebox.askyesno("Save", "Would you like to save the current file?", icon="question"):
+            saveFile()
         root.destroy()
         quit(1)
-
 
 #region File Menu Commands
 def newFile(event=None):
@@ -113,7 +112,6 @@ def newFile(event=None):
 
     else:
         textField.delete("1.0", tk.END)
-
 
 def openFile(event=None):
     file = filedialog.askopenfile(parent=root, mode="rb", title="Select a file to open")
@@ -126,7 +124,6 @@ def openFile(event=None):
         currentFile = file.name
         root.title(currentFile)
         file.close()
-
 
 #######################################################
 
@@ -229,7 +226,6 @@ def saveFileAs(event=None):
     root.title(currentFile)
     file.close()
 
-
 def saveFile(event=None):
     print("Saving file...")
     exists = os.path.isfile(str(currentFile))
@@ -239,7 +235,6 @@ def saveFile(event=None):
     else:
         saveFileAs()
 
-
 #######################################################
 
 #endregion
@@ -247,10 +242,8 @@ def saveFile(event=None):
 def undo(event=None):
     textField.event_generate("<<Undo>>")
 
-
 def redo(event=None):
     textField.event_generate("<<Redo>>")
-
 
 #######################################################
 def copySelected(event=None):
@@ -258,22 +251,18 @@ def copySelected(event=None):
     root.clipboard_clear()
     root.clipboard_append(selectedText)
 
-
 def cutSelected(event=None):
     textField.event_generate("<<Cut>>")
-
 
 def paste(event=None):
     textField.event_generate("<<Paste>>")
     return "break"
-
 
 def selectAll(event=None):
     textField.tag_add(SEL, "1.0", END)
     textField.mark_set(INSERT, "1.0")
     textField.see(INSERT)
     return "break"
-
 
 #######################################################
 def find(event=None):
@@ -293,7 +282,6 @@ def find(event=None):
         done = messagebox.showinfo("Find", "Highlighting all instances of " + searchedText + ".")
         if done:
             textField.tag_remove("found", "1.0", END)
-
 
 def replace(event=None):
     searchedText = simpledialog.askstring("Replace", "Enter the text you want to replace:")
@@ -415,7 +403,6 @@ def openPreferences():
 def aboutPyText3(event=None):
     label = messagebox.showinfo("About PyText3", "Shock9616\nVersion: 1.0\n© 2018 Shock9616 All rights reserved",
                                 icon="info")
-
 
 def showCredits(event=None):
     cw = messagebox.showinfo("PyText3 Credits", prefs.creditsText, icon="info")
