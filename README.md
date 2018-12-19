@@ -26,7 +26,7 @@ To run PyText3, all you have to do is run the main.py file.
 <img src="/images/Screenshots/windows.PNG" alt="Screenshot of PyText3 running on Windows 10">
 
 # Acknowledgments
-
+* <a target="_blank" href="python.org">python.org</a>
 * [python.org](python.org)
 * [stackoverflow.com](stackoverflow.com)
 * [pygments.org](pygments.org)
