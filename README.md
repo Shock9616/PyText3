@@ -28,7 +28,7 @@ To run PyText3, all you have to do is run the main.py file.
 # Acknowledgments
 * [python.org](https://www.python.org)
 * [stackoverflow.com](https://www.stackoverflow.com)
-* [pygments.org](https://www.pygments.org)
+* [pygments.org](http://pygments.org/)
 * [TheNewBoston](https://www.youtube.com/user/thenewboston)
 * [Brian Oakley](https://stackoverflow.com/users/7432/bryan-oakley)
 * [DiogoTheCoder](https://www.youtube.com/channel/UCDDLOEVnBVlAMSbYRzuH-ww)
