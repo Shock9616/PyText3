@@ -1,17 +1,1 @@
-To Do List:
-    - Editable text field
-    - Cut, Copy, Paste, Select All, Undo, Redo
-    - Menu Bar
-    - File Management
-    - Line Numbers
-    - Themes & Fonts
-    - Updating Status Bar
-    - Find & Replace
-    # TODO: Tabs
-    # TODO: Syntax Highlighting
-    # TODO: Code Autocomplete
-    - Language Switching
-
-And after ALL of that is done:
-    # TODO: Final touch ups and performance improvements
-
+To Do List:    - Editable text field    - Cut, Copy, Paste, Select All, Undo, Redo    - Menu Bar    - File Management    - Line Numbers    - Themes & Fonts    - Updating Status Bar    - Find & Replace    # TODO: Tabs    # TODO: Syntax Highlighting    # TODO: Code Autocomplete    - Language SwitchingAnd after ALL of that is done:    # TODO: Final touch ups and performance improvements

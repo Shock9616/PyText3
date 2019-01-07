@@ -6,7 +6,6 @@
 # Copyright © Shock9616 2018 All rights reserved
 #
 
-from tkinter import *
 from pygments import lex
 from pygments.lexers import PythonLexer
 
