@@ -16,7 +16,7 @@ PyText3 is compatible with Mac OS, Linux, and Windows as long as there is a Pyth
 
 ## Dependancies
  - Python 3
- - Pygments (For syntax highlighting)
+ - Pygments (For syntax highlighting NOTE: Not currently supported. Support will be added soon.)
 
 ## Running the editor
 To run PyText3, all you have to do is run the main.py file.
