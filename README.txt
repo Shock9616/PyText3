@@ -60,3 +60,9 @@ To run PyText3, all you have do do is run the main.py file.
  - TheNewBoston (https://www.youtube.com/user/thenewboston)
  - Brian Oakley (https://stackoverflow.com/users/7432/bryan-oakley)
  - DiogoTheCoder (https://www.youtube.com/channel/UCDDLOEVnBVlAMSbYRzuH-ww)
+
+
+-------------------------------
+   Link to GitHub repository
+-------------------------------
+https://github.com/Shock9616/PyText3
